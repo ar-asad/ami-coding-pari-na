@@ -4,13 +4,21 @@ import App from './App.jsx'
 import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import { router } from './Routes/Routes.jsx'
+import AuthProvider from './context/AuthProvider/AuthProvider.jsx'
+import { Toaster } from 'react-hot-toast'
+
+// console.log(import.meta.env)
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div >
-      <RouterProvider router={router}>
-        <App />
-      </RouterProvider>
-    </div>
+    <AuthProvider>
+      <div >
+        <RouterProvider router={router}>
+          <App />
+          <Toaster />
+        </RouterProvider>
+      </div>
+    </AuthProvider>
   </React.StrictMode>,
 )
