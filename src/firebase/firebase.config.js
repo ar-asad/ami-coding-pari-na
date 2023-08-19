@@ -14,5 +14,14 @@ const firebaseConfig = {
     appId: import.meta.env.VITE_appId
 };
 
+// const firebaseConfig = {
+//     apiKey: "AIzaSyCwb8DGSZqWDFExt9osUntytLLbaM8MWQg",
+//     authDomain: "ami-coding-pari-na-4b68b.firebaseapp.com",
+//     projectId: "ami-coding-pari-na-4b68b",
+//     storageBucket: "ami-coding-pari-na-4b68b.appspot.com",
+//     messagingSenderId: "1026995126455",
+//     appId: "1:1026995126455:web:64d3db94054c413cb8cd32"
+// };
+
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
