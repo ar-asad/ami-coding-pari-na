@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
 import KhojSearch from "../pages/KhojSearch/KhojSearch";
+import PrivateRoute from "./PrivateRoute";
 
 
 export const router = createBrowserRouter([
@@ -17,7 +18,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/khoj",
-                element: <KhojSearch></KhojSearch>
+                element: <PrivateRoute><KhojSearch></KhojSearch></PrivateRoute>
             }
 
         ]
